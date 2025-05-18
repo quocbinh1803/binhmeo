@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap');
+
+body
+{
+	background-color:#eeeeee;color:#000000;
+	
+ font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	margin: 0
+	}	
+h1,h2,h3{ margin-bottom: 0; margin-top: 0}
+
+.font-subtitle
+ {
+  font-family: "WindSong", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+a{ 
+	color:deeppink;
+	text-decoration:none;
+	font-weight: 700
+}
+a:hover /* khi đưa chuột và chữ có thẻ a - liên kết trang web nào đó*/
+{
+	color: #A40338
+}
+
+.container-fluid
+{width: 100%; padding-left: 16px; padding-right: 16px 
+}
+.container
+{width: 95%; margin: auto}
+/*size container cho tablet(ipad)*/
+@media (min-width:600px)
+{.container
+	{width: 90%; margin: auto}
+}
+/*size container cho PC */
+@media (min-width:1000px)
+{.container
+	{width: 80%; margin: auto}
+}
+	
+/*chia hệ thống thành 12 cột*/
+.col-1{width:8.3333%}
+.col-2{width:16.6666%}
+.col-3{width:25%}
+.col-4{width:33.33%}
+.col-5{width:41.66%}
+.col-6{width:50%}
+.col-7{width:58.33%}
+.col-8{width:66.66%}
+.col-9{width:75%}
+.col-10{width:83.33%}
+.col-11{width:91.66%}
+.col-12{width:100%}
+[class*="col-"]
+{
+	padding:15px;
+	
+}
+*{box-sizing:border-box}
+img-100{ width: 100% }
+.row
+{
+	display: flex;
+	flex-wrap: wrap
+}
+.card
+{ 
+	background: white;
+	border-radius: 15px; /* bo goc*/
+	overflow: hidden
+	}
+.card-body
+{ 
+	padding: 16px
+}
+footer
+{
+	background:#C0C0C0
+} 
+
+.text-primary {color:#6DD263}
+.text-secondary {color: lightcoral}
+.text-light {color: #E9E9E9}
+.text-dark {color: #252525}
+
+.bg-primary {background-color:gold}
+.bg-secondary {background-color: aqua}
+.bg-dark {background-color: cornflowerblue}
+
+.btn-primary 
+{
+	background-color: orangered;
+	color:#FFFFFF ;
+	padding: 8px 16px;
+	border-radius: 4px 
+}
+
+btn-primary:hover
+{
+	background-color:aqua;
+	color: white
+}
+
+.btn-outline-primary
+{
+	border: 1px red solid;
+	color:brown;
+	padding: 8px 16px ;
+	border-radius: 4px;
+	margin: 2px;
+}
+
+.btn-outline-primary:hover
+{
+	background-color: orangered;
+	color: white
+}
+
+.banner 
+{
+	position:relative
+}
+.banner-captioncap
+{
+	padding: 20px;
+		width:40%;
+	position: ababsolute;
+	right: 10%; top: 20%
+		
+}
+
+#hero
+{	
+}
+
+
+.text-center{text-align: center}
+.text-right{text-align: right}
+.text-justify{text-align: justify}
+.border-bottom{border-bottom: 1px solid #666}
+
+/*-- các cột nếu cần flex thì goi d-flex*/
+.d-flex{ display: flex}
+
+
+/* canh đẩy chiều dọc cho các box trong flex*/
+.align-items-center { align-items: center}
+.aline-items-end{align-items: flex-end}
+
+/* canh đẩy chiều ngang cho các box trong flex*/
+.justify-center{justify-content: center}
+.justify-between{justify-content: space-between}
+.justify-end{justify-content: flex-end}
+.justify-start{justify-content: flex-start}
+
+.my-100
+{ 
+margin-top: 100px;
+margin-bottom: 100px
+}
+.my-50
+{ 
+margin-top: 50px;
+margin-bottom: 50px
+}
